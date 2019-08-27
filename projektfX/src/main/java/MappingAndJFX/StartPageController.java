@@ -14,10 +14,10 @@ public class StartPageController implements ControlledScreenInterface {
     }
 
     @FXML
-    private void switchToEnterCompanyName() throws IOException {
+    private void swichToInput() throws IOException {
         //App.setRoot("enterCompanyName");
-        myController.setScreen(App.enterCompanyNameID);
-        App.setStageTitle("Unternehmensnamen angeben");
+        myController.setScreen(App.inputID);
+        App.setStageTitle("Unternehmensnamen ");
         /**
          Image imageBackground = new Image(getClass().getResource("pictures/aktienchart.png").toExternalForm());
         BackgroundImage backgroundImage = new BackgroundImage(imageBackground, BackgroundRepeat.NO_REPEAT,
