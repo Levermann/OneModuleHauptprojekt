@@ -20,113 +20,159 @@ import java.util.List;
 
 })
 public class Company implements Serializable  {
+    public Company(String companyname, String datum, float eigenkapital, float jahresueberschuss, float gewinnEBIT,
+                   float jahresumsatz, float fremdkapital, float aktuellerAktienkurs, float gewinnschaezung,
+                   float gewinnAVG, float halten, float verkaufen, float kaufen, float kursanstiegUnternehmen,
+                   float kursanstiegIndex, float gewinnschaezungVor4Wochen,
+                   float aktienkursTagVeroeffentlichungQartalszahlen, float kursVor6Monaten, float kursVor12Monaten,
+                   float kursVor3Monaten, float kursVor2Monaten, float kursVor1Monat, float daxVor1Monat,
+                   float daxVor2Monaten, float daxVor3Monaten, float gewinnschaezungNaechstesJahr,
+                   float gewinnschaezungDiesesJahr, float finanzsektor, Integer perfInJedemMonat,
+                   Integer kursgewinnVor3Jahren, Integer kursgewinnVor2Jahren, Integer kursgewinnVor1Jahr,
+                   Integer aktuellenErwartetenKursgewinn, Integer kursgewinnschaezungNaechstesJahr) {
+        Companyname = companyname;
+        this.datum = datum;
+        this.eigenkapital = eigenkapital;
+        this.jahresueberschuss = jahresueberschuss;
+        GewinnEBIT = gewinnEBIT;
+        Jahresumsatz = jahresumsatz;
+        Fremdkapital = fremdkapital;
+        AktuellerAktienkurs = aktuellerAktienkurs;
+        Gewinnschaezung = gewinnschaezung;
+        GewinnAVG = gewinnAVG;
+        Halten = halten;
+        Verkaufen = verkaufen;
+        Kaufen = kaufen;
+        KursanstiegUnternehmen = kursanstiegUnternehmen;
+        KursanstiegIndex = kursanstiegIndex;
+        GewinnschaezungVor4Wochen = gewinnschaezungVor4Wochen;
+        AktienkursTagVeroeffentlichungQartalszahlen = aktienkursTagVeroeffentlichungQartalszahlen;
+        KursVor6Monaten = kursVor6Monaten;
+        KursVor12Monaten = kursVor12Monaten;
+        KursVor3Monaten = kursVor3Monaten;
+        KursVor2Monaten = kursVor2Monaten;
+        KursVor1Monat = kursVor1Monat;
+        DaxVor1Monat = daxVor1Monat;
+        DaxVor2Monaten = daxVor2Monaten;
+        DaxVor3Monaten = daxVor3Monaten;
+        GewinnschaezungNaechstesJahr = gewinnschaezungNaechstesJahr;
+        GewinnschaezungDiesesJahr = gewinnschaezungDiesesJahr;
+        Finanzsektor = finanzsektor;
+        PerfInJedemMonat = perfInJedemMonat;
+        KursgewinnVor3Jahren = kursgewinnVor3Jahren;
+        KursgewinnVor2Jahren = kursgewinnVor2Jahren;
+        KursgewinnVor1Jahr = kursgewinnVor1Jahr;
+        AktuellenErwartetenKursgewinn = aktuellenErwartetenKursgewinn;
+        KursgewinnschaezungNaechstesJahr = kursgewinnschaezungNaechstesJahr;
+    }
 
     @Id
     @Column(name="Companyname")
     private String Companyname;
-    @Basic
+
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="id")
     private Integer id;
-    @Basic
+
     @Column(name="datum")
     private String datum;
-    @Basic
+
     @Column(name="eigenkapital")
     private float eigenkapital;
-    @Basic
+
     @Column(name="jahresueberschuss")
     private float jahresueberschuss;
-    @Basic
+
     @Column(name="GewinnEBIT")
     private float GewinnEBIT;
-    @Basic
+
     @Column(name="Jahresumsatz")
     private float Jahresumsatz;
-    @Basic
+
     @Column(name="Fremdkapital")
     private float Fremdkapital;
-    @Basic
+
     @Column(name="AktuellerAktienkurs")
     private float AktuellerAktienkurs;
-    @Basic
+
     @Column(name="Gewinnschaezung")
     private float Gewinnschaezung;
-    @Basic
+
     @Column(name="GewinnAVG")
     private float GewinnAVG;
-    @Basic
+
     @Column(name="Halten")
     private float Halten;
-    @Basic
+
     @Column(name="Verkaufen")
     private float Verkaufen;
-    @Basic
+
     @Column(name="Kaufen")
     private float Kaufen;
-    @Basic
+
     @Column(name="KursanstiegUnternehmen")
     private float KursanstiegUnternehmen;
-    @Basic
+
     @Column(name="KursanstiegIndex")
     private float KursanstiegIndex;
-    @Basic
+
     @Column(name="GewinnschaezungVor4Wochen")
     private float GewinnschaezungVor4Wochen;
-    @Basic
+
     @Column(name="AktienkursTagVeroeffentlichungQartalszahlen")
     private float AktienkursTagVeroeffentlichungQartalszahlen;
-    @Basic
+
     @Column(name="KursVor6Monaten")
     private float KursVor6Monaten;
-    @Basic
+
     @Column(name="KursVor12Monaten")
     private float KursVor12Monaten;
-    @Basic
+
     @Column(name="KursVor3Monaten")
     private float KursVor3Monaten;
-    @Basic
+
     @Column(name="KursVor2Monaten")
     private float KursVor2Monaten;
-    @Basic
+
     @Column(name="KursVor1Monat")
     private float KursVor1Monat;
-    @Basic
+
     @Column(name="DaxVor1Monat")
     private float DaxVor1Monat;
-    @Basic
+
     @Column(name="DaxVor2Monaten")
     private float DaxVor2Monaten;
-    @Basic
+
     @Column(name="DaxVor3Monaten")
     private float DaxVor3Monaten;
-    @Basic
+
     @Column(name="GewinnschaezungNaechstesJahr")
     private float GewinnschaezungNaechstesJahr;
-    @Basic
+
     @Column(name="GewinnschaezungDiesesJahr")
     private float GewinnschaezungDiesesJahr;
-    @Basic
+
     @Column(name="Finanzsektor")
     private float Finanzsektor;
-    @Basic
+
     @Column(name="PerfInJedemMonat", unique = true, nullable = true)
     private Integer PerfInJedemMonat;
-    @Basic
+
     @Column(name="KursgewinnVor3Jahren", unique = true, nullable = true)
     private Integer KursgewinnVor3Jahren;
-    @Basic
+
     @Column(name="KursgewinnVor2Jahren", unique = true, nullable = true)
     private Integer KursgewinnVor2Jahren;
-    @Basic
+
     @Column(name="KursgewinnVor1Jahr", unique = true, nullable = true)
     private Integer KursgewinnVor1Jahr;
-    @Basic
+
     @Column(name="AktuellenErwartetenKursgewinn", unique = true, nullable = true)
     private Integer AktuellenErwartetenKursgewinn;
-    @Basic
+
     @Column(name="KursgewinnschaezungNaechstesJahr", unique = true, nullable = true)
     private Integer KursgewinnschaezungNaechstesJahr;
+
     //association One To Many: One Company to Many Punktelisten
    @OneToMany(mappedBy = "company")
     private List<AnalysisRating> analysisRatings;

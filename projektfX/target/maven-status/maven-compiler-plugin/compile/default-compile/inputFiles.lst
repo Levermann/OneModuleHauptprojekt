@@ -7,7 +7,7 @@ C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mainProjekt\HibernateUtil.jav
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mainProjekt\AnalysisRating.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\keyFigures\Dreimonatsreversal.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\keyFigures\Eigenkapitalrendite.java
-C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mappingAndJFX\SecondaryController.java
+C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\MappingAndJFX\SecondaryController.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\keyFigures\KursgewinnVerhaeltnis5Jahre.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mainProjekt\Generic.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mainProjekt\Company.java
@@ -18,9 +18,8 @@ C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mainProjekt\GenericHibernate.
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\keyFigures\Gewinnwachstum.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\keyFigures\Kursmomentum.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mainProjekt\AnalysisSteps.java
-C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mappingAndJFX\PrimaryController.java
-C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mappingAndJFX\App.java
-C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\module-info.java
+C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\MappingAndJFX\PrimaryController.java
+C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\MappingAndJFX\App.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\mainProjekt\CompanyG.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\keyFigures\Gewinnrevision.java
 C:\Users\Lisa\IdeaProjects\projektfX\src\main\java\keyFigures\KursGewinnVerhaeltnis.java
